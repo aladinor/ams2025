@@ -64,6 +64,9 @@ project:
         - title: ARCO Radar Datasets
           children:
             - file: notebooks/Analysis-Ready/ARCO-Datasets.ipynb
+        - title: Tracking
+          children:
+            - file: notebooks/lrose/titan-tobac-tutorial.ipynb
   jupyter:
       binder:
         repo: ProjectPythia/erad2024
