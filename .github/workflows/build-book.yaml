@@ -25,14 +25,14 @@ on:
         type: string  # had a lot of trouble with boolean types, see https://github.com/actions/runner/issues/1483
 
 env:
-  DOCKER_TAG: pr_13
+  DOCKER_TAG: pr_36
 
 jobs:
   build-container:
     runs-on: ubuntu-latest
     steps:
       - name: checkout files in repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 2
       - name: Check Changes
@@ -88,7 +88,7 @@ jobs:
       run:
         shell: bash -l {0}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Build the book
         run: |
           # run notebooks
